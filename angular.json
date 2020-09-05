@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "ib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -24,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
+              "src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [],
@@ -110,6 +110,13 @@
             "exclude": [
               "**/node_modules/**"
             ]
+          }
+        },
+        "defaults": {
+          "styleExt": "scss",
+          "component": {},
+          "spec": {
+            "component": false
           }
         },
         "e2e": {
